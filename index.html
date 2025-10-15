@@ -7,12 +7,71 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>GreenBite</header>
+    <header class="header">
+        <div class="wrapper header__row">
+            <div class="logo">GreenBite</div>
+            <nav class="nav">
+                <a href="#benefits">Переваги</a>
+                <a href="#menu">Меню</a>
+                <a href="#reviews">Відгуки</a>
+                <a href="#contact" class="btn btn--primary">Замовити</a>
+            </nav>
+        </div>
+    </header>
     <main>
-        <section id="hero">Герой-блок</section>
-        <section id="benefits">Переваги</section>
-        <section id="menu">Меню</section>
-        <section id="reviews">Відгуки</section>
+        <section id="hero">
+            <div class="wrapper hero">
+                <div class="hero__text">
+                    <h1>Корисні ланчі щодня</h1>
+                    <p>Свіжі інгредієнти, збалансовані порції, доставка за розкладом.</p>
+                    <div class="hero__cta">
+                        <a href="#menu" class="btn btn--primary">Переглянути меню</a>
+                        <a href="#contact" class="btn">Оформити заявку</a>
+                    </div>
+                </div>
+                <div class="hero__media">
+                    <!--пізніше додати сюди зображення-->
+                    <div class="hero__placeholder" aria-hidden="true">Зображення</div>
+                </div>
+            </div>
+        </section>
+        <section id="benefits">
+            <div class="wrapper">
+                <h2>Чому GreenBite</h2>
+                 <div class="cards">
+                    <article class="card">
+                        <h3>Свіжість</h3>
+                        <p>Готуємо в день доставки. Жодних залишків.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Баланс</h3>
+                        <p>БЖВ під ваші цілі. Порції 400-600 г.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Гнучкість</h3>
+                        <p>Щоденні або тижневі плани. Просто змінити.</p>
+                    </article>
+                </div>    
+            </div>
+        </section>
+        <section id="menu">
+            <div class="wrapper">
+                <h2>Меню тижня</h2>
+                <ul>
+                    <li>Понеділок: курка теріякі, рис, овочі</li>
+                    <li>Вівторок: лосось, кускус, шпинат</li>
+                    <li>Середа: індичка, кіноа, броколі</li>
+                    <li>Четвер: яловичина, батат, салат</li>
+                    <li>П'ятниця: тофу, локшина, овочі</li>
+                </ul>
+            </div>
+        </section>
+        <section id="reviews">
+            <div class="wrapper">
+                <h2>Відгуки</h2>
+                <blockquote>"Зручно для офісу, порції ситні." - Олена</blockquote>
+            </div>
+        </section>
         <section id="contact">
             <form id="order-form">
                 <input name="name" placeholder="Ім'я">
@@ -21,7 +80,7 @@
             </form>
         </section>
     </main>
-    <footer>&copy;GreenBite</footer>
+    <footer>&copy; GreenBite</footer>
     <script src="script.js"></script>
 </body>
 </html>
