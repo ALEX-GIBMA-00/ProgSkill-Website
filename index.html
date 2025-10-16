@@ -73,10 +73,11 @@
             </div>
         </section>
         <section id="contact">
-            <form id="order-form">
-                <input name="name" placeholder="Ім'я">
-                <input name="phone" placeholder="Телефон">
-                <button type="submit">Замовити</button>
+            <form id="order-form" novalidate>
+                <input name="name" id="name" placeholder="Ім'я" autocomplete="name" required >
+                <input name="phone" id="phone" placeholder="Телефон" type="tel" autocomplete="tel" required>
+                <button type="submit" id="submit-btn" class="btn btn--primary">Замовити</button>
+                <p id="form-msg" aria-live="polite"></p>
             </form>
         </section>
     </main>
