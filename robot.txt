@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alex-gibma-00.github.io/ProgSkill-Website/sitemap.xml
